@@ -2,6 +2,7 @@
     <head>
         <title>Alonzo Hernandez</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     </head>
     <body>
         <div id="navbar">
@@ -14,9 +15,16 @@
         <img src="images/alonzo.png" id="alonzo">
     </body>
     <script>
-        var about = document.getElementById('about');
-        about.onclick = function () {
-            
-        }
+        var screen = "#alonzo1";
+        var width = document.getElementById("alonzo").clientWidth;
+        var movement = 480 - width/2;
+        $("#about").click(function() {
+          if (screen != "#about") {
+            $("#alonzo").animate({
+              right: "+=" + movement + "px"
+            }, 1000);
+            screen = "#about";
+          }
+        });
     </script>
 </html>
