@@ -3,28 +3,30 @@
         <title>Alonzo Hernandez</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="http://cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
+        <link href="https://fonts.googleapis.com/css?family=Karla|Raleway" rel="stylesheet">
     </head>
     <body>
         <div id="navbar">
-            <div class="button" id="alonzo1">Alonzo</div>
-            <div class="button" id="about">About</div>
-            <div class="button" id="projects">Projects</div>
-            <div class="button" id="resume">Resume</div>
-            <div class="button" id="contact">Contact</div>
+            <span id="name">Alonzo Hernandez </span> <br/> <br/>
+            <span class="link" id="about">About</span> <br/>
+            <span class="link" id="projects">Projects</span> <br/>
+            <span class="link" id="resume">Resume</span> <br/>
+            <span class="link" id="contact">Contact</span>
         </div>
         <img src="images/alonzo.png" id="alonzo">
+        
+        <script>
+            $("#about").mouseenter(function() {
+                $("#about").animate({
+                    color: "#DB5"
+                }, 50);     
+            });
+            $("#about").mouseleave(function() {
+                $("#about").animate({
+                    color: "#555"
+                }, 250);     
+            });
+        </script>
     </body>
-    <script>
-        var screen = "#alonzo1";
-        var width = document.getElementById("alonzo").clientWidth;
-        var movement = 480 - width/2;
-        $("#about").click(function() {
-          if (screen != "#about") {
-            $("#alonzo").animate({
-              right: "+=" + movement + "px"
-            }, 1000);
-            screen = "#about";
-          }
-        });
-    </script>
 </html>
