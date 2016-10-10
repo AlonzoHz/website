@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Alonzo Hernandez</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="http://cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
+        <link href="https://fonts.googleapis.com/css?family=Karla|Raleway" rel="stylesheet">
+    </head>
+    <body>
+        <div id="navbar">
+            <span class="link title" id="name">Alonzo Hernandez</span> <br/> <br/>
+            <span class="link" id="about">About</span> <br/>
+            <span class="link" id="projects">Projects</span> <br/>
+            <span class="link" id="resume">Resume</span> <br/>
+            <span class="link" id="contact">Contact</span>
+        </div>
+        <div id="content">
+            <img src="images/alonzo.png" id="picture"/>
+            <div id="aboutme">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at libero pharetra, semper dui non, pretium turpis. Aenean mollis non tortor eget sollicitudin. Nulla facilisis aliquet lacinia. Nullam tellus orci, pharetra sit amet sem a, dapibus dignissim lectus. Quisque ipsum lorem, ornare id faucibus vitae, scelerisque dapibus augue. Duis ullamcorper nisi massa, nec aliquam tellus vehicula at. Morbi ligula urna, bibendum sed scelerisque a, gravida a massa. Aliquam porta consectetur neque, eget blandit est dictum non.
+
+Vivamus blandit sem eu orci interdum, sed faucibus eros aliquet. Nulla auctor sapien a arcu aliquet, quis lobortis urna ultricies. Fusce iaculis odio vel blandit placerat. Etiam blandit, purus eu vestibulum rhoncus, purus nisl dapibus tortor, at tempor eros leo et ex. Donec non feugiat risus, in luctus mi. Donec accumsan mauris congue ipsum dignissim tristique. Nullam pretium eros vel nisl laoreet tempor. Phasellus at enim vel orci maximus accumsan id at eros. Proin at sagittis tortor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc at ante ut tortor lobortis placerat. Suspendisse ut mauris lobortis, ultricies nibh a, rhoncus est. Aliquam laoreet sodales ante in convallis. Duis lacinia velit libero, egestas mollis diam congue a.
+
+Proin metus ante, accumsan eu sodales aliquam, convallis in lorem. Etiam purus nisi, sagittis sed mi sed, viverra ultricies tortor. Donec quis tortor purus. Proin nec sem sapien. Nam sagittis eu elit id ornare. In tristique hendrerit turpis nec lobortis. Etiam eu ante vitae arcu bibendum suscipit. Phasellus eget scelerisque neque, in malesuada felis. Mauris feugiat, nibh at posuere ultricies, ligula elit rutrum felis, at facilisis tortor dui eget turpis. Mauris quis est quis libero tincidunt gravida finibus non neque. Maecenas lacinia commodo gravida.
+
+Nam sit amet laoreet nisi, non rhoncus diam. Donec rutrum massa vitae ante imperdiet, quis placerat arcu hendrerit. Quisque tempor arcu eu maximus aliquam. Curabitur ullamcorper, odio quis fringilla ornare, lorem mi rhoncus nisl, a accumsan purus odio nec dui. Sed mollis, dui et pharetra rhoncus, dui nibh convallis urna, vel semper odio mauris vel leo. Suspendisse faucibus arcu id egestas faucibus. Donec faucibus mi urna, eget tempus ex condimentum sed. Etiam vel libero ullamcorper, bibendum augue vitae, fringilla diam. Etiam quis vestibulum felis, quis accumsan lorem. In hac habitasse platea dictumst. Duis a luctus lorem. Curabitur id molestie mauris. Proin orci nibh, cursus ac tortor vitae, laoreet ornare est.
+
+Aenean metus velit, sollicitudin eu dolor vel, molestie tincidunt elit. Curabitur ut elementum nulla. Quisque quam elit, pellentesque id velit non, pellentesque consequat metus. Nunc sollicitudin ultricies magna quis molestie. Mauris ante tortor, porta nec pellentesque eget, feugiat non nisi. Nullam et mauris quis est cursus commodo. Phasellus luctus augue eleifend velit efficitur consectetur.</div>
+        </div>
+        
+        <script>
+            $("#about").mouseenter(function() {
+                $("#about").animate({
+                    color: "#DB5"
+                }, 50);     
+            });
+            $("#about").mouseleave(function() {
+                $("#about").animate({
+                    color: "#555"
+                }, 250);
+            });
+        </script>
+    </body>
+</html>

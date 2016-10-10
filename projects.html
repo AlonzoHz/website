@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Alonzo Hernandez</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="http://cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
+        <link href="https://fonts.googleapis.com/css?family=Karla|Raleway" rel="stylesheet">
+    </head>
+    <body>
+        <div id="navbar">
+            <span class="link title" id="name">Alonzo Hernandez</span>         <br/> <br/>
+            <span class="link" id="about">About</span>       <br/>
+            <span class="link" id="projects">Projects</span> <br/>
+            <span class="link" id="resume">Resume</span>     <br/>
+            <span class="link" id="contact">Contact</span>
+
+            <div id="quicklinks">
+                <span class="link">GitHub</span> <br/>
+                <span class="link">Email</span>
+            </div>
+        </div>
+        
+        <div id="content">
+            <div class="project">
+                <span class="title">Dress Alonzo Up</span>
+                <img src="images/dressup.png" class="thumb"/>
+                <a href="dressup/">Link</a>
+                <a href="https://github.com/alonzohz">Code</a>
+            </div>
+            <div class="project">
+                <span class="title">GSMST Smash</span>
+                <img src="images/smash.png" class="thumb"/>
+                <a href="smash/">Link</a>
+                <a href="https://github.com/alonzohz">Code</a>
+            </div>
+            <div class="project">
+                <span class="title">Sleep</span>
+                <img src="images/sleep.png" class="thumb"/>
+                <a href="sleep/">Link</a>
+                <a href="https://github.com/alonzohz">Code</a>
+            </div>
+            <div class="project">
+                <span class="title">Sleep</span>
+                <img src="images/sleep.png" class="thumb"/>
+                <a href="sleep/">Link</a>
+                <a href="https://github.com/alonzohz">Code</a>
+            </div>
+        </div>
+        
+        <script>
+            $("#about").mouseenter(function() {
+                $("#about").animate({
+                    color: "#DB5"
+                }, 50);     
+            });
+            $("#about").mouseleave(function() {
+                $("#about").animate({
+                    color: "#555"
+                }, 250);
+            });
+        </script>
+    </body>
+</html>

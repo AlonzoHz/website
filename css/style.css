@@ -2,25 +2,23 @@ body {
     background-color: #DDD;
     margin: 50px;
     font-family: 'Karla', sans-serif;
+    color: #555;
+    font-size: 12pt;
 }
 
 #navbar {
     position: fixed;
     width: 200px;
     height: 100%;
-    color: black;
 }
 
-#name {
+.title {
     font-family: 'Raleway', sans-serif;
     color: #222;
     font-size: 16pt;
 }
 
 .link {
-    color: #555;
-    font-size: 12pt;
-    line-height: 16pt;
     cursor: pointer;
 }
 
@@ -28,9 +26,8 @@ body {
     background-color: red;
 }
 
-.container {
-    margin: 0 auto;
-    width: 600px;
+#content {
+    margin-left: 250px; 
 }
 
 #alonzo {
@@ -40,5 +37,30 @@ body {
     position: relative;
 }
 
-#aboutbox {
+#picture {
+    float: left;
+    width: 50%;
+    max-width: 1000px;
+}
+
+#aboutme {
+    margin-left: 50%;
+}
+
+#quicklinks{
+    position: absolute;
+    bottom: 50;
+    margin-bottom: 50px;
+}
+
+.project {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    width: 45%;
+    float: left;
+}
+
+.thumb {
+    width: 100%;
 }
