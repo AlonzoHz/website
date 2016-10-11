@@ -6,6 +6,7 @@ body {
     font-size: 12pt;
 }
 
+
 #navbar {
     position: fixed;
     width: 200px;
@@ -14,16 +15,19 @@ body {
 
 .title {
     font-family: 'Raleway', sans-serif;
+    text-decoration: none;
     color: #222;
     font-size: 16pt;
 }
 
 .link {
-    cursor: pointer;
+    text-decoration: none;
+    color: #555;
 }
 
-.button:hover {
-    background-color: red;
+.active-link {
+    text-decoration: none;
+    color: black;
 }
 
 #content {

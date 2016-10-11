@@ -2,21 +2,22 @@
     <head>
         <title>Alonzo Hernandez</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="icon" type="image/png" href="images/icon.png">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="http://cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
         <link href="https://fonts.googleapis.com/css?family=Karla|Raleway" rel="stylesheet">
     </head>
     <body>
         <div id="navbar">
-            <span class="link title" id="name">Alonzo Hernandez</span>         <br/> <br/>
-            <span class="link" id="about">About</span>       <br/>
-            <span class="link" id="projects">Projects</span> <br/>
-            <span class="link" id="resume">Resume</span>     <br/>
-            <span class="link" id="contact">Contact</span>
+            <a class="title" id="name" href="index.html">Alonzo Hernandez</a> <br/> <br/>
+            <a class="link" id="about" href="about.html">About</a> <br/>
+            <a class="active-link" id="projects" href="projects.html">Projects</a> <br/>
+            <a class="link" id="resume" href="resume.html">Resume</a> <br/>
+            <a class="link" id="contact" href="contact.html">Contact</a>
 
             <div id="quicklinks">
-                <span class="link">GitHub</span> <br/>
-                <span class="link">Email</span>
+                <a class="link" href="https://github.com/alonzohz">GitHub</a> <br/>
+                <a class="link" href="mailto:alonzo.hernandez@gatech.edu">Email</a>
             </div>
         </div>
         
@@ -50,18 +51,5 @@
                 </div>
             </div>
         </div>
-        
-        <script>
-            $("#about").mouseenter(function() {
-                $("#about").animate({
-                    color: "#DB5"
-                }, 50);     
-            });
-            $("#about").mouseleave(function() {
-                $("#about").animate({
-                    color: "#555"
-                }, 250);
-            });
-        </script>
     </body>
 </html>
