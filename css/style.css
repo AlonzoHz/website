@@ -1,4 +1,4 @@
-body {
+    body {
     background-color: white;
     margin: 50px;
     font-family: 'Karla', sans-serif;
@@ -37,8 +37,7 @@ body {
 #alonzo {
     display: block;
     margin: auto;
-    height: 90%;
-    position: relative;
+    width: 90%;
 }
 
 #picture {
@@ -62,11 +61,17 @@ body {
     width: 100%;
 }
 
-.column {
+.project-column {
     padding-left: 10px;
     padding-right: 10px;
     width: 45%;
     float: left;
+}
+
+.home-column {
+    width: 33%;
+    float: left;
+    overflow: hidden;
 }
 
 .thumb {
