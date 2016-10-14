@@ -38,5 +38,12 @@
         </div>
 
         <script src="javascript/menu.js"></script>
+        <script>
+            $(window).resize(function() {
+                if ($(window).width() < 640) {
+                    alert($(window).width());
+                }
+            });
+        </script>
     </body>
 </html>
