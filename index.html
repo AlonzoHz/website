@@ -8,16 +8,20 @@
         <link href="https://fonts.googleapis.com/css?family=Karla|Raleway" rel="stylesheet">
     </head>
     <body>
+        <div id="hamburger">
+            <img src="images/menu.svg" id="menu"/> <span class="title">Alonzo Hernandez</span>
+            <div id="hamburger-menu"></div>
+        </div>
         <div id="navbar">
-            <a class="title" id="name" href="index.html">Alonzo Hernandez</a> <br/> <br/>
-            <a class="link" id="about" href="about.html">About</a> <br/>
-            <a class="link" id="projects" href="projects.html">Projects</a> <br/>
-            <a class="link" id="resume" href="resume.html">Resume</a> <br/>
-            <a class="link" id="contact" href="contact.html">Contact</a>
+            <div><a class="title" id="name" href="index.html">Alonzo Hernandez</a></div><br/>
+            <div><a class="link" id="about" href="about.html">About</a></div>
+            <div><a class="link" id="projects" href="projects.html">Projects</a></div>
+            <div><a class="link" id="resume" href="resume.html">Resume</a></div>
+            <div><a class="link" id="contact" href="contact.html">Contact</a></div>
 
             <div id="quicklinks">
-                <a class="link" href="https://github.com/alonzohz">GitHub</a> <br/>
-                <a class="link" href="mailto:alonzo.hernandez@gatech.edu">Email</a>
+                <div><a class="link" href="https://github.com/alonzohz">GitHub</a></div>
+                <div><a class="link" href="mailto:alonzo.hernandez@gatech.edu">Email</a></div>
             </div>
         </div>
         
@@ -39,10 +43,34 @@
 
         <script src="javascript/menu.js"></script>
         <script>
-            $(window).resize(function() {
+            var setting = "big";
+            
+            function resize() {
                 if ($(window).width() < 640) {
-                    alert($(window).width());
+                    if (setting == "big") {
+                        $("#navbar").css("display", "none");
+                        $("#hamburger").css("display", "block");
+                        $("#content").css("margin", "10px");
+                        setting = "small";
+                    }
+                } else if (setting == "small") {
+                    $("#navbar").css("display", "block");
+                    $("#hamburger").css("display", "none");
+                    $("#content").css({"margin": "0px", "margin-left": "250px"});
+                    setting = "big";
                 }
+            }
+
+            $(window).resize(function() {
+                resize();
+            });
+
+            $(document).ready(function() {
+                resize();
+            });
+
+            $("#menu").click(function() {
+                $("#hamburger-menu").toggle();
             });
         </script>
     </body>
