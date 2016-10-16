@@ -9,9 +9,15 @@
     </head>
     <body>
         <div id="hamburger">
-            <img src="images/menu.svg" id="menu"/> <span class="title">Alonzo Hernandez</span>
-            <div id="hamburger-menu"></div>
+            <img src="images/menu.svg" id="menu"/> <a class="title" href="index.html">Alonzo Hernandez</span>
+            <div id="hamburger-menu">
+                <div><a class="link" id="about" href="about.html">About</a></div>
+                <div><a class="link" id="projects" href="projects.html">Projects</a></div>
+                <div><a class="link" id="resume" href="resume.html">Resume</a></div>
+                <div><a class="link" id="contact" href="contact.html">Contact</a></div>
+            </div>
         </div>
+
         <div id="navbar">
             <div><a class="title" id="name" href="index.html">Alonzo Hernandez</a></div><br/>
             <div><a class="link" id="about" href="about.html">About</a></div>
@@ -42,36 +48,6 @@
         </div>
 
         <script src="javascript/menu.js"></script>
-        <script>
-            var setting = "big";
-            
-            function resize() {
-                if ($(window).width() < 640) {
-                    if (setting == "big") {
-                        $("#navbar").css("display", "none");
-                        $("#hamburger").css("display", "block");
-                        $("#content").css("margin", "10px");
-                        setting = "small";
-                    }
-                } else if (setting == "small") {
-                    $("#navbar").css("display", "block");
-                    $("#hamburger").css("display", "none");
-                    $("#content").css({"margin": "0px", "margin-left": "250px"});
-                    setting = "big";
-                }
-            }
-
-            $(window).resize(function() {
-                resize();
-            });
-
-            $(document).ready(function() {
-                resize();
-            });
-
-            $("#menu").click(function() {
-                $("#hamburger-menu").toggle();
-            });
-        </script>
+        <script src="javascript/responsive.js"></script>
     </body>
 </html>

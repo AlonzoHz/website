@@ -87,7 +87,12 @@ body {
     height: 100%;
     position: fixed;
     z-index: 999;
-    margin-top: 16pt;
     background-color: white;
     display: none;
+    padding-left: 32px;
+}
+
+#menu {
+    width: 32px;
+    height: 32px;
 }
