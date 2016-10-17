@@ -9,10 +9,12 @@ function resize() {
             //General resizing
             $("#navbar").css("display", "none");
             $("#hamburger").css("display", "block");
-            $("body").css("margin", "0px");
-            $("#content").css("margin", "10px");
+            $("body").css("margin", "10px");
+            $("#content").css("margin-left", "0px");
             //Home resizing
             //About resizing
+            $("#picture").css("width", "100%");
+            $("#aboutme").css("margin-left", "0px");
             //Contact resizing
             //Projects resizing
             $(".project-column").css("width", "95%");
@@ -27,6 +29,8 @@ function resize() {
         $("#content").css({"margin": "0px", "margin-left": "250px"});
         //Home resizing
         //About resizing
+        $("#picture").css("width", "50%");
+        $("#aboutme").css("margin-left", "50%");
         //Contact resizing
         //Projects resizing
         $(".project-column").css("width", "45%");
@@ -49,5 +53,5 @@ $(document).ready(function() {
 });
 
 $("#menu").click(function() {
-    $("#hamburger-menu").toggle();
+    $("#hamburger-menu").slideToggle();
 });

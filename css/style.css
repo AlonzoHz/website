@@ -80,6 +80,7 @@ body {
 
 #hamburger {
     display: none;
+    margin-bottom: 20px;
 }
 
 #hamburger-menu {
@@ -89,10 +90,10 @@ body {
     z-index: 999;
     background-color: white;
     display: none;
-    padding-left: 32px;
 }
 
 #menu {
     width: 32px;
     height: 32px;
+    float: right;
 }
