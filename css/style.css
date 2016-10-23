@@ -6,6 +6,10 @@ body {
     font-size: 12pt;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 #navbar {
     position: fixed;
@@ -96,4 +100,50 @@ body {
     width: 32px;
     height: 32px;
     float: right;
+}
+
+#infographic {
+    width: 100%;
+    position: relative;
+}
+
+#room {
+    width: 100%;
+    position: relative;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: pixelated;
+}
+
+@keyframes pointer {
+    from {top: 2%;}
+    to {top: 4%;}
+}
+
+#clickme {
+    width: 100%;
+    position: absolute;
+    top: 4px;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: pixelated;
+    animation-name: pointer;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#infobox {
+    width: 85%;
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    height: 85%;
+    background-color: white;
+    border: .225em solid black;
+    display: none;
 }
