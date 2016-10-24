@@ -2,8 +2,7 @@
     <head>
         <title>Alonzo Hernandez</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="icon" type="image/png" href="images/icon.png">
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="icon" type="image/png" href="images/alonzo.png">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Karla|Raleway" rel="stylesheet">
     </head>
@@ -16,8 +15,10 @@
                 <div><a class="link" id="resume" href="resume.html">Resume</a></div>
                 <div><a class="link" id="contact" href="contact.html">Contact</a></div>
             </div>
-
-            <img src="images/menu.svg" id="menu"/> 
+            <div id="menu">
+                <img src="images/menu.png" class="menu-image"/>
+                <img src="images/x-menu.png" class="menu-image" style="display: none"/>
+            </div>
         </div>
 
         <div id="navbar">
@@ -34,22 +35,77 @@
         </div>
         
         <div id="content">
-            <div class="home-column">
-                <span class="title">Work</span> <br/> <br/>
-                + Working in a lab helped me explore algorithms in a research context
-            </div>
-            <div class="home-column">
-                <div>
-                    <img src="images/alonzo.png" id="alonzo">
+            <div id="infographic">
+                <img src="images/room.png" id="room" usemap="#linkmap"/>
+                <img src="images/clickme.png" id="clickme"/>
+
+                <map name="linkmap" >
+                    <area shape="rect" coords="0,46,17,202" class="box" id="coat">
+                    <area shape="rect" coords="83,240,107,262" class="box" id="gamecube">
+                    <area shape="rect" coords="255,195,274,234" class="box" id="computer">
+                    <area shape="rect" coords="218,156,257,161" class="box" id="keyboard">
+                    <area shape="rect" coords="146,32,195,262" class="box" id="alonzo-map">
+                    <area shape="rect" coords="373,51,421,81" class="box" id="baseball">
+                    <area shape="rect" coords="297,168,445,180" class="box" id="synthesizer">
+                </map>
+
+                <div id="infobox">
+                    <div id="infobox-copy">
+                        Hello!
+                    </div>
+                    <div id="close">
+                        close
+                    </div>
                 </div>
-            </div>
-            <div class="home-column">
-                <span class="title">Play</span> <br/> <br/>
-                + Over the summer, an interest in Super Smash Bros turned into an obssesion with data visualization
             </div>
         </div>
 
         <script src="javascript/menu.js"></script>
         <script src="javascript/responsive.js"></script>
+        <script src="javascript/imageMapResizer.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("map").imageMapResize();
+            });
+            
+            $("#infobox").click(function() {
+                if ($("#infobox").is(":visible")) { 
+                    $("#infobox").hide(200);
+                }
+            });
+
+            $(".box").click(function() {
+                $("#infobox").show(200);
+                $("#clickme").hide(100);
+            });
+
+            $("#coat").click(function() {
+                $("#infobox-copy").html("That's my lab coat! <br/><br/>Although I didn't actually wear a lab coat as a <a href='https://ww2.chemistry.gatech.edu/brownlab/' target='_blank'>Brown Lab</a> theorist, I got research experience helping my mentor optimize the lab's quantum circuit simulator.<br/><br/>The results from my project will be included in a paper that will be released soon!");
+            });
+
+            $("#gamecube").click(function() {
+                $("#infobox-copy").html("You clicked on my GameCube!<br/><br/>The GameCube that I received on Christmas 2004 was my first foray into video games. I instantly fell in love with its cartoony 3D worlds and have since poured many hours into classics such as MVP Baseball 2005 and Need for Speed: Most Wanted.<br/><br/>My GameCube was the centerpiece of the Super Smash Bros. Melee league I hosted in summer 2016. This activity led me to develop a PHP and SQL based <a href='/smash/' target='_blank'>website</a> to make player statistics public!");
+            });
+
+            $("#computer").click(function() {
+                $("#infobox-copy").html("You clicked on my computer!");
+            });
+
+            $("#keyboard").click(function() {
+                $("#infobox-copy").html("Hear that?? It's my mechanical keyboard!<br/><br/>I became interested in keyboards when I was thinking about how to improve my typing. What I found was a wild keyboard world with many types of switches, caps, etc.<br/><br/>I currently have five keyboards including three that I refurbished and one that I built! These days I mostly use my <a href='https://upload.wikimedia.org/wikipedia/commons/5/57/ModelM.jpg' target='_blank'>IBM Model M</a>.");
+            });
+
+            $("#alonzo-map").click(function() {
+                $("#infobox-copy").html("Hello! I'm Alonzo Hernandez and this is my room of curiosities!<br/><br/>Click on objects outlined in red to learn more about who I am and the things I love.");
+            });
+
+            $("#baseball").click(function() {
+                $("#infobox-copy").html("You clicked on my baseball stuff!<br/><br/>Before high school, I played travel baseball. <a href='http://www.gwinnettbaseball.com/showimage.asp?img=/photos/2011_ggbl_champs2.jpg' target='_blank'>Here's</a> my team after we won the county championship in 2011! (I'm the kid in the upper-left)<br/><br/>Besides playing, I also coached during high school and collected cards. Baseball statistics were the subject of my first data-obsession.<br/><br/>Go Braves!");
+            });
+
+            $("#synthesizer").click(function() {
+                $("#infobox-copy").html("That's my synthesizer!<br/><br/>In addition to listening to music, I love to make it. One of my on-going projects is learning how to play piano. Although my skills don't match the power of my <a href='https://youtu.be/XyjZCTysVQQ'>Korg DW8000</a>, its interesting sounds keep me practicing.");
+            });
+        </script>
     </body>
 </html>

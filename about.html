@@ -2,19 +2,22 @@
     <head>
         <title>Alonzo Hernandez</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="icon" type="image/png" href="images/icon.png">
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="icon" type="image/png" href="images/alonzo.png">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Karla|Raleway" rel="stylesheet">
     </head>
     <body>
         <div id="hamburger">
-            <img src="images/menu.svg" id="menu"/> <a class="title" href="index.html">Alonzo Hernandez</span>
+            <a class="title" href="index.html">Alonzo Hernandez</span>
             <div id="hamburger-menu">
                 <div><a class="link" id="about" href="about.html">About</a></div>
                 <div><a class="link" id="projects" href="projects.html">Projects</a></div>
                 <div><a class="link" id="resume" href="resume.html">Resume</a></div>
                 <div><a class="link" id="contact" href="contact.html">Contact</a></div>
+            </div>
+            <div id="menu">
+                <img src="images/menu.png" class="menu-image"/>
+                <img src="images/x-menu.png" class="menu-image" style="display: none"/>
             </div>
         </div>
 
@@ -30,11 +33,13 @@
                 <a class="link" href="mailto:alonzo.hernandez@gatech.edu">Email</a>
             </div>
         </div>
-        <div id="content">
+        <div id="content">            
+            <div class="title">About</div><br/>
+
             <img src="images/alonzo.png" id="picture"/>
             <div id="aboutme">
                 I am a first year computer science student at Georgia Tech. My fascination with programming began in middle school, when I first began to ask how computer programs worked. Although no one I knew had an answer, this question set me on a path of discovery. I first began making programs using MIT's block-based language <a href="https://scratch.mit.edu" target="_blank">Scratch</a>. Since then I've taught myself Java, Python, and PHP and applied them to various personal and professional projects. Currently, I am interested in algorithm design, physical system simulation, and web development.<br/><br/>
-                In high school, I did research at Georgia Tech's <a href="https://ww2.chemistry.gatech.edu/brownlab/" target="_blank">Brown Lab for Cold Molecular Ions and Quantum Information</a>. I worked on the optimization of the Monte Carlo component of their Python quantum circuit simulator. Quantum errors are rare but still very significant, which makes them both difficult and important to simulate. My modifications of the simulator involved sampling only the rare-case error subspaces. This allowed the lab to collect more data in a given amount of time. I plan to return to the lab in the spring to help further improve the simulator.<br/><br/>
+                In high school, I did research at Georgia Tech's <a href="https://ww2.chemistry.gatech.edu/brownlab/" target="_blank">Brown Lab for Cold Molecular Ions and Quantum Information</a>. I worked on the optimization of the Monte Carlo component of their Python quantum circuit simulator. Quantum errors are rare but still very significant, which makes them both difficult and important to simulate. My modifications to the simulator involved sampling only the rare-case error subspaces. This allowed the lab to collect more data in a given amount of time. I plan to return to the lab in the spring to help further improve the simulator.<br/><br/>
                 Beyond my professional work, during the summer of 2016, I organized weekly Super Smash Bros. Melee tournaments at my house and collected data on player performance. In order to help attendees improve at the game, I built a <a href="http://alonzoh.me/smash/" target="_blank">website</a> using PHP and SQL that displays player and match statistics and analyzes head-to-head matchups. This public portal was a driving force in the improvement of the many players who otherwise misunderstood the weak points of their play. I plan to implement the code that I wrote into an open source package that can be used by leagues and regions that have unused data so that they can release player statistics and create better informed power rankings.<br/><br/>
                 In the near future, I hope to get experience applying my programming skills in an industry context so that I can see how computer science is used in business. I will also plan to continue asking questions and exploring new realms of knowledge through research and personal projects. 
             </div>

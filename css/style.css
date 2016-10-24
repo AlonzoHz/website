@@ -6,6 +6,10 @@ body {
     font-size: 12pt;
 }
 
+.body-fixed {
+    overflow-y: hidden;
+}
+
 a {
     text-decoration: none;
 }
@@ -46,8 +50,13 @@ a {
 
 #picture {
     float: left;
-    width: 50%;
+    width: 45%;
     max-width: 1000px;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: pixelated;
 }
 
 #aboutme {
@@ -61,13 +70,15 @@ a {
 }
 
 .project {
-    padding-bottom: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
     width: 100%;
+    border: 1px solid black;
+    position: relative;
 }
 
 .project-column {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 20px;
     width: 45%;
     float: left;
 }
@@ -88,18 +99,25 @@ a {
 }
 
 #hamburger-menu {
+    top: 42; 
     width: 100%;
     height: 100%;
     position: fixed;
     z-index: 999;
     background-color: white;
     display: none;
+    opacity: .9;
 }
 
 #menu {
     width: 32px;
     height: 32px;
     float: right;
+}
+
+.menu-image {
+    width: 32px;
+    height: 32px;
 }
 
 #infographic {
@@ -138,12 +156,64 @@ a {
 }
 
 #infobox {
-    width: 85%;
+    width: 49%;
     position: absolute;
-    top: 7%;
-    left: 7%;
-    height: 85%;
+    top: 12%;
+    left: 48%;
+    height: 49%;
     background-color: white;
-    border: .225em solid black;
+    border: 1px solid #222;
     display: none;
+    padding: 5px;
+    opacity: .9;
+}
+
+#infobox-copy {
+    height: 92%;
+    overflow: auto;
+}
+
+.blue-overlay {
+    background-color: #8FF0FF;
+    opacity: .9;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: none;
+}
+
+.red-overlay {
+    background-color: #B51700;
+    opacity: .9;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: none;
+}
+
+.brown-overlay {
+    background-color: #CD7500;
+    opacity: .9;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: none;
+}
+
+#close {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    cursor: pointer;
 }

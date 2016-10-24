@@ -54,4 +54,7 @@ $(document).ready(function() {
 
 $("#menu").click(function() {
     $("#hamburger-menu").slideToggle();
+    $("body").toggleClass("body-fixed");
+    window.scrollTo(0,0);
+    $(this).find('img').toggle();
 });

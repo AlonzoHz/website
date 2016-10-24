@@ -2,19 +2,23 @@
     <head>
         <title>Alonzo Hernandez</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="icon" type="image/png" href="images/icon.png">
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="icon" type="image/png" href="images/alonzo.png">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Karla|Raleway" rel="stylesheet">
     </head>
     <body>
         <div id="hamburger">
-            <img src="images/menu.svg" id="menu"/> <a class="title" href="index.html">Alonzo Hernandez</span>
+            <a class="title" href="index.html">Alonzo Hernandez</span>
             <div id="hamburger-menu">
                 <div><a class="link" id="about" href="about.html">About</a></div>
                 <div><a class="link" id="projects" href="projects.html">Projects</a></div>
                 <div><a class="link" id="resume" href="resume.html">Resume</a></div>
                 <div><a class="link" id="contact" href="contact.html">Contact</a></div>
+            </div>
+
+            <div id="menu">
+                <img src="images/menu.png" class="menu-image"/>
+                <img src="images/x-menu.png" class="menu-image" style="display: none"/>
             </div>
         </div>
 
@@ -35,7 +39,8 @@
             <div class="title">
                 Resume
             </div> <br/>
-            <a href="files/resume.pdf">View in PDF</a>
+            <a href="files/resume.pdf" target="_blank">Click here to view in a new tab.</a>
+            <iframe src="files/resume.pdf" width="100%" height="100%"></iframe>
         </div>
 
         <script src="javascript/menu.js"></script>
