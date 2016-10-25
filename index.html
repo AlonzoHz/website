@@ -72,13 +72,13 @@
             
             $("#infobox").click(function() {
                 if ($("#infobox").is(":visible")) { 
-                    $("#infobox").hide(200);
+                    $("#infobox").fadeOut(100);
                 }
             });
 
             $(".box").click(function() {
-                $("#infobox").show(200);
-                $("#clickme").hide(100);
+                $("#infobox").fadeIn(100);
+                $("#clickme").fadeOut(100);
             });
 
             $("#coat").click(function() {

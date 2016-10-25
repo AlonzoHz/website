@@ -37,32 +37,36 @@
         
         <div id="content">
             <div class="title">Projects</div><br/>
-            <div class="project-column">
-                <div class="project" id="smash-project">
-                    <div class="blue-overlay" id="smash-overlay">
-                        <span class="title">GSMST Smash</span>
-                        <a href="smash/">Link</a>
-                        <a href="https://github.com/alonzohz">Code</a>
+            You can find code samples on my <a href="https://github.com/alonzohz" target="_blank">GitHub</a>
+            or click on projects to learn more about them.
+            <div id="project-wrapper">
+                <div class="project-column">
+                    <div class="project" id="smash-project">
+                        <div class="blue-overlay" id="smash-overlay">
+                            <a href="smash/" class="block-link title">
+                                <span class="title-span">Smash League</span>
+                            </a>
+                        </div>
+                        <img src="images/smash.png" class="thumb"/>
                     </div>
-                    <img src="images/smash.png" class="thumb"/>
+                    <div class="project" id="sleep-project">
+                        <div class="blue-overlay" id="sleep-overlay">
+                            <a href="smash/" class="block-link title">
+                                <span class="title-span">How Much Sleep</span>
+                            </a>
+                        </div>
+                        <img src="images/sleep.png" class="thumb"/>
+                    </div>
                 </div>
-                <div class="project" id="sleep-project">
-                    <div class="blue-overlay" id="sleep-overlay">
-                        <span class="title">Sleep</span>
-                        <a href="sleep/">Link</a>
-                        <a href="https://github.com/alonzohz">Code</a>
+                <div class="project-column">
+                    <div class="project" id="dressup-project">
+                        <div class="blue-overlay" id="dressup-overlay">
+                            <a href="smash/" class="block-link title">
+                                <span class="title-span">Dress Alonzo Up</span>
+                            </a>
+                        </div>
+                        <img src="images/smash.png" class="thumb"/>
                     </div>
-                    <img src="images/sleep.png" class="thumb"/>
-                </div>
-            </div>
-            <div class="project-column">
-                <div class="project" id="dressup-project">
-                    <div class="blue-overlay" id="dressup-overlay">
-                        <span class="title">Dress Alonzo Up</span>
-                        <a href="dressup/">Link</a>
-                        <a href="https://github.com/alonzohz">Code</a>
-                    </div>
-                    <img src="images/dressup.png" class="thumb"/>
                 </div>
             </div>
         </div>
@@ -71,22 +75,22 @@
         <script src="javascript/responsive.js"></script>
         <script>
             $("#smash-project").mouseenter(function() {
-                $("#smash-overlay").show(200);
+                $("#smash-overlay").fadeIn(100);
             });
             $("#smash-project").mouseleave(function() {
-                $("#smash-overlay").hide(200);
+                $("#smash-overlay").fadeOut(100);
             });
             $("#sleep-project").mouseenter(function() {
-                $("#sleep-overlay").show(200);
+                $("#sleep-overlay").fadeIn(100);
             });
             $("#sleep-project").mouseleave(function() {
-                $("#sleep-overlay").hide(200);
+                $("#sleep-overlay").fadeOut(100);
             });
             $("#dressup-project").mouseenter(function() {
-                $("#dressup-overlay").show(200);
+                $("#dressup-overlay").fadeIn(100);
             });
             $("#dressup-project").mouseleave(function() {
-                $("#dressup-overlay").hide(200);
+                $("#dressup-overlay").fadeOut(100);
             });
         </script>
     </body>

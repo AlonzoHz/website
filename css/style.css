@@ -69,6 +69,10 @@ a {
     margin-bottom: 50px;
 }
 
+.project-wrapper {
+    width: 100%;
+}
+
 .project {
     margin-bottom: 10px;
     padding: 5px;
@@ -81,6 +85,32 @@ a {
     padding-right: 20px;
     width: 45%;
     float: left;
+}
+
+.block-link {
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.title-span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.blue-overlay {
+    background-color: #8FF0FF;
+    opacity: .9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: none;
 }
 
 .home-column {
@@ -171,44 +201,6 @@ a {
 #infobox-copy {
     height: 92%;
     overflow: auto;
-}
-
-.blue-overlay {
-    background-color: #8FF0FF;
-    opacity: .9;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    box-sizing: border-box;
-    padding: 5px;
-    width: 100%;
-    height: 100%;
-    z-index: 999;
-    display: none;
-}
-
-.red-overlay {
-    background-color: #B51700;
-    opacity: .9;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 999;
-    display: none;
-}
-
-.brown-overlay {
-    background-color: #CD7500;
-    opacity: .9;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 999;
-    display: none;
 }
 
 #close {
