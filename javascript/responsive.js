@@ -29,7 +29,7 @@ function resize() {
         $("#content").css({"margin": "0px", "margin-left": "250px"});
         //Home resizing
         //About resizing
-        $("#picture").css("width", "50%");
+        $("#picture").css("width", "45%");
         $("#aboutme").css("margin-left", "50%");
         //Contact resizing
         //Projects resizing

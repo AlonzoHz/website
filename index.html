@@ -14,6 +14,7 @@
                 <div><a class="link" id="projects" href="projects.html">Projects</a></div>
                 <div><a class="link" id="resume" href="resume.html">Resume</a></div>
                 <div><a class="link" id="contact" href="contact.html">Contact</a></div>
+                <div><a class="link" id="github" href="https://github.com/alonzohz">GitHub</a></div>
             </div>
             <div id="menu">
                 <img src="images/menu.png" class="menu-image"/>
@@ -29,7 +30,7 @@
             <div><a class="link" id="contact" href="contact.html">Contact</a></div>
 
             <div id="quicklinks">
-                <div><a class="link" href="https://github.com/alonzohz">GitHub</a></div>
+                <div><a class="link" href="https://github.com/alonzohz" target="_blank">GitHub</a></div>
                 <div><a class="link" href="mailto:alonzo.hernandez@gatech.edu">Email</a></div>
             </div>
         </div>
@@ -46,6 +47,7 @@
                     <area shape="rect" coords="218,156,257,161" class="box" id="keyboard">
                     <area shape="rect" coords="146,32,195,262" class="box" id="alonzo-map">
                     <area shape="rect" coords="373,51,421,81" class="box" id="baseball">
+                    <area shape="rect" coords="376,127,402,147" class="box" id="books">
                     <area shape="rect" coords="297,168,445,180" class="box" id="synthesizer">
                 </map>
 
@@ -88,7 +90,7 @@
             });
 
             $("#computer").click(function() {
-                $("#infobox-copy").html("You clicked on my computer!");
+                $("#infobox-copy").html("You clicked on my computer!<br/><br/>At home I run a <a href='http://pcpartpicker.com/list/vQGJkT' target='_blank'>desktop</a> that I built myself. At school, I have a Lenovo Thinkpad 13. Both run Windows, but I also have experience with Linux from working at the Brown Lab!");
             });
 
             $("#keyboard").click(function() {
@@ -101,6 +103,10 @@
 
             $("#baseball").click(function() {
                 $("#infobox-copy").html("You clicked on my baseball stuff!<br/><br/>Before high school, I played travel baseball. <a href='http://www.gwinnettbaseball.com/showimage.asp?img=/photos/2011_ggbl_champs2.jpg' target='_blank'>Here's</a> my team after we won the county championship in 2011! (I'm the kid in the upper-left)<br/><br/>Besides playing, I also coached during high school and collected cards. Baseball statistics were the subject of my first data-obsession.<br/><br/>Go Braves!");
+            });
+
+            $("#books").click(function() {
+                $("#infobox-copy").html("Ahhh, my school books!<br/><br/>I went to high school at the <a href='http://gsmst.org/' target='_blank'>Gwinnett School of Mathematics, Science, and Technology</a>, where I got to take high level technical courses that prepared me well for college. Now I attend Georgia Tech as a computer science major!<br/><br/>Go Jackets!");
             });
 
             $("#synthesizer").click(function() {
