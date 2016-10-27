@@ -209,3 +209,47 @@ a {
     right: 1%;
     cursor: pointer;
 }
+
+#slideshow {
+    width: 100%;
+    padding-top: 75%;
+    background-color: #555;
+    position: relative;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.slide {
+    top: 0%;
+    position: absolute;
+    border: 1 solid black;
+    width: 100%;
+    display: none;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
+    margin: auto;
+}
+
+.nav-arrow {
+    position: absolute; 
+    top: 50%;
+    margin-top: -32px;
+    opacity: .3;
+}
+
+.nav-arrow:hover {
+    opacity: .8;
+}
+
+#arrow-left {
+    left: 0;
+    z-index: 999;
+}
+
+#arrow-right {
+    left: 100%;
+    margin-left: -32px;
+    z-index: 999;
+}

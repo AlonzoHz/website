@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Alonzo Hernandez</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="icon" type="image/png" href="images/alonzo.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Karla|Raleway" rel="stylesheet">
+    </head>
+    <body>
+        <div id="hamburger">
+            <a class="title" href="index.html">Alonzo Hernandez</a>
+            <div id="hamburger-menu">
+                <div><a class="link" id="about" href="about.html">About</a></div>
+                <div><a class="link" id="projects" href="projects.html">Projects</a></div>
+                <div><a class="link" id="resume" href="resume.html">Resume</a></div>
+                <div><a class="link" id="contact" href="contact.html">Contact</a></div>
+                <div><a class="link" id="github" href="https://github.com/alonzohz">GitHub</a></div>
+            </div>
+            <div id="menu">
+                <img src="images/menu.png" class="menu-image"/>
+                <img src="images/x-menu.png" class="menu-image" style="display: none"/>
+            </div>
+        </div>
+
+        <div id="navbar">
+            <div><a class="title" id="name" href="index.html">Alonzo Hernandez</a></div><br/>
+            <div><a class="link" id="about" href="about.html">About</a></div>
+            <div><a class="link" id="projects" href="projects.html">Projects</a></div>
+            <div><a class="link" id="resume" href="resume.html">Resume</a></div>
+            <div><a class="link" id="contact" href="contact.html">Contact</a></div>
+
+            <div id="quicklinks">
+                <div><a class="link" href="https://github.com/alonzohz" target="_blank">GitHub</a></div>
+                <div><a class="link" href="mailto:alonzo.hernandez@gatech.edu">Email</a></div>
+            </div>
+        </div>
+        
+        <div id="content">
+             <div class="title">
+                Dress Me Up
+            </div> <br/>
+            <a href="projects.html">Return to projects page.</a>
+            <div>
+                <div id="picture"> 
+                    <div id="slideshow">
+                        <img src="images/left.png" class="nav-arrow" id="arrow-left">
+                        <img src="images/right.png" class="nav-arrow" id="arrow-right">
+                        <img src="images/smash.png" class="slide">
+                        <img src="images/dressup.png" class="slide">
+                    </div>
+                </div>
+                <div id="aboutme">
+                    <div class="title">Links</div>
+                    <p>
+                        <a href="dressup/">View this project in action.</a><br/>
+                        <a href="https://github.com/alonzohz/dress-me-up">View this project's code.</a>
+                    </p>
+                    <div class="title">Description</div>
+                    <p>
+                        Dress Me Up is a PHP and SQL webpage that I wrote in later summer 2016 to help my girlfriend decide what I should wear on dates. It takes pieces of clothing I've drawn and indexed in a SQL database and makes them available based on their type.
+                    </p>
+                    <div class="title">What I Learned</div>
+                    <p>
+                        Because this project involves layering images, it made me read extensively about how webpage elements are positioned and displayed relative to each other on the screen. In addition, I had to figure out how to create an iteratively populated graphical menu of the sort used to show all of the clothing options.
+                    </p>
+                    <div class="title">Future</div>
+                    <p>
+                        At this point, the code is functional, but I need to add more clothing. I also want to add a submission system so that I can be informed when someone wants to wear me something to an event.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script src="javascript/menu.js"></script>
+        <script src="javascript/responsive.js"></script>
+        <script src="javascript/slideshow.js"></script>
+    </body>
+</html>

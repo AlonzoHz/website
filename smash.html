@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>Alonzo Hernandez</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="icon" type="image/png" href="images/alonzo.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Karla|Raleway" rel="stylesheet">
+    </head>
+    <body>
+        <div id="hamburger">
+            <a class="title" href="index.html">Alonzo Hernandez</a>
+            <div id="hamburger-menu">
+                <div><a class="link" id="about" href="about.html">About</a></div>
+                <div><a class="link" id="projects" href="projects.html">Projects</a></div>
+                <div><a class="link" id="resume" href="resume.html">Resume</a></div>
+                <div><a class="link" id="contact" href="contact.html">Contact</a></div>
+                <div><a class="link" id="github" href="https://github.com/alonzohz">GitHub</a></div>
+            </div>
+            <div id="menu">
+                <img src="images/menu.png" class="menu-image"/>
+                <img src="images/x-menu.png" class="menu-image" style="display: none"/>
+            </div>
+        </div>
+
+        <div id="navbar">
+            <div><a class="title" id="name" href="index.html">Alonzo Hernandez</a></div><br/>
+            <div><a class="link" id="about" href="about.html">About</a></div>
+            <div><a class="link" id="projects" href="projects.html">Projects</a></div>
+            <div><a class="link" id="resume" href="resume.html">Resume</a></div>
+            <div><a class="link" id="contact" href="contact.html">Contact</a></div>
+
+            <div id="quicklinks">
+                <div><a class="link" href="https://github.com/alonzohz" target="_blank">GitHub</a></div>
+                <div><a class="link" href="mailto:alonzo.hernandez@gatech.edu">Email</a></div>
+            </div>
+        </div>
+        
+        <div id="content">
+             <div class="title">
+                GSMST Smash League
+            </div> <br/>
+            <a href="projects.html">Return to projects page.</a>
+            <div>
+                <div id="picture"> 
+                    <div id="slideshow">
+                        <img src="images/left.png" class="nav-arrow" id="arrow-left">
+                        <img src="images/right.png" class="nav-arrow" id="arrow-right">
+                        <img src="images/smash.png" class="slide">
+                        <img src="images/dressup.png" class="slide">
+                    </div>
+                </div>
+                <div id="aboutme">
+                    <div class="title">Links</div>
+                    <p>
+                        <a href="smash/">View this project in action.</a><br/>
+                        <a href="https://github.com/alonzohz/smash-league">View this project's code.</a>
+                    </p>
+                    <div class="title">Description</div>
+                    <p>
+                        The GSMST Smash League website was an on-going project during summer 2016 that I built using primarily PHP and SQL. I had started my Super Smash Bros Melee league during spring and had held three tournaments,
+                        so I had a significant amount of data on my hands. Since Elliot or I were in contention for being the top player at that point, I wanted to determine the leader
+                        statistically. When I completed that (Elliot was leading at the time), I decided to make the website available to the competitors in order to help legitimize the league's power rankings. 
+                        Thus, what started as a project to calculate and present player elo ratings turned into a fully-fledged league website.
+                        After I completed most of the public-facing pages, I began to build a stronger set of admin tools, including better data input pages and revision apps.
+                        The analytics pages originated as an admin tool, but turned into a public page when I realized how helpful graphs and matchup data would be to players.
+                    </p>
+                    <div class="title">What I Learned</div>
+                    <p>
+                        This project was the first time that I worked with databases on such a large and multi-faceted scale. 
+                        I learned about how tables within a database can be associated in meaningful ways, such as how the table containing match data links to info on the players competing in the player table. This was also the first time that I implemented nested queries
+                        in PHP, which is essential to associated data schema. The data entry component gave me a healthy respect of data versioning. The first time I misentered data, I had no system to correct the mistake and because of the nature of elo, I couldn't correct the problem manually.
+                        To fix the error, I had to write a new admin tool that refactored all of the player variables up to the point of the error. In the future, I'll implement refactoring before I make a mistake.
+                    </p>
+                    <div class="title">Future</div>
+                    <p>
+                        Since the summer 2016 season of my league is over, I have time to turn this project into whatever I want. My goal is to generalize 
+                        the package so that I can distribute it for use by leagues other than mine. This will involve simplifying installation and increasing the friendliness of tools that I had developed for my own use.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script src="javascript/menu.js"></script>
+        <script src="javascript/responsive.js"></script>
+        <script src="javascript/slideshow.js"></script>
+    </body>
+</html>
