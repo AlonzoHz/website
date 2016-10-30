@@ -217,6 +217,7 @@ a {
     position: relative;
     border: 1px solid black;
     overflow: hidden;
+    image-rendering: auto;
 }
 
 .slide {
@@ -252,4 +253,15 @@ a {
     left: 100%;
     margin-left: -32px;
     z-index: 999;
+}
+
+#enlarged-image {
+    background-color: #555;
+    position: fixed;
+    width: 50%;
+    top: 25%;
+    left: 25%;
+    border: 1px solid black;
+    overflow: hidden;
+    image-rendering: auto;
 }

@@ -16,3 +16,7 @@ $("#arrow-left").click(function() {
     if(slide < 0) {slide = slides.length - 1}
     $(slides[slide]).fadeIn(100);
 });
+
+$(slides[slide]).click(function() {
+    $("#enlarged-image").fadeIn(100);
+});
