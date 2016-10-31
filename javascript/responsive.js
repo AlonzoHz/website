@@ -16,7 +16,9 @@ function resize() {
             $("#picture").css("width", "100%");
             $("#aboutme").css("margin-left", "0px");
             //Contact resizing
-            $("#picture").insertAfter("#aboutme");
+            $("#contact-picture").insertAfter("#contact-info");
+            $("#contact-picture").css("width", "100%");
+            $("#contact-info").css("margin-left", "0px");
             //Projects resizing
             $(".project-column").css("width", "95%");
             //Resume resizing
@@ -33,7 +35,9 @@ function resize() {
         $("#picture").css("width", "45%");
         $("#aboutme").css("margin-left", "50%");
         //Contact resizing
-        $("#aboutme").insertAfter("#picture");
+        $("#contact-info").insertAfter("#contact-picture");
+        $("#contact-picture").css("width", "45%");
+        $("#contact-info").css("margin-left", "50%");
         //Projects resizing
         $(".project-column").css("width", "45%");
         //Resume resizing

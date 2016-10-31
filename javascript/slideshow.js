@@ -21,6 +21,14 @@ function changeSlide(amount) {
     interval = setInterval(changeSlide, 5000, 1);
 }
 
-$(slides[slide]).click(function() {
-    $("#enlarged-image").fadeIn(100);
+$(slides).click(function() {
+    var slideSource = slides[slide].src;
+    $("#enlarged-image").attr("src", slideSource);
+    $("#enlarged-image-container").slideToggle(100);
+});
+
+$("#enlarged-image-container").click(function() {
+    if ($("#enlarged-image-container").is(":visible")) { 
+        $("#enlarged-image-container").slideToggle(100);
+    }
 });
