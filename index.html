@@ -10,6 +10,7 @@
         <div id="hamburger">
             <a class="title" href="index.html">Alonzo Hernandez</a>
             <div id="hamburger-menu">
+                <div><a class="active-link" id="home" href="index.html">Home</a></div>
                 <div><a class="link" id="about" href="about.html">About</a></div>
                 <div><a class="link" id="projects" href="projects.html">Projects</a></div>
                 <div><a class="link" id="resume" href="resume.html">Resume</a></div>
@@ -24,6 +25,7 @@
 
         <div id="navbar">
             <div><a class="title" id="name" href="index.html">Alonzo Hernandez</a></div><br/>
+            <div><a class="active-link" id="home" href="index.html">Home</a></div>
             <div><a class="link" id="about" href="about.html">About</a></div>
             <div><a class="link" id="projects" href="projects.html">Projects</a></div>
             <div><a class="link" id="resume" href="resume.html">Resume</a></div>
@@ -36,6 +38,9 @@
         </div>
         
         <div id="content">
+            <div class="title">
+                Home
+            </div> <br/>
             <div id="infographic">
                 <img src="images/room.png" id="room" usemap="#linkmap"/>
                 <img src="images/clickme.png" id="clickme"/>
@@ -82,35 +87,35 @@
             });
 
             $("#coat").click(function() {
-                $("#infobox-copy").html("That's my lab coat! <br/><br/>Although I didn't actually wear a lab coat as a <a href='https://ww2.chemistry.gatech.edu/brownlab/' target='_blank'>Brown Lab</a> theorist, I got research experience helping my mentor optimize the lab's quantum circuit simulator.<br/><br/>The results from my project will be included in a paper that will be released soon!");
+                $("#infobox-copy").html("That's my lab coat! <br/><br/>Although I didn't actually wear a lab coat as a <a href='https://ww2.chemistry.gatech.edu/brownlab/' target='_blank'>Brown Lab</a> theorist, I got research experience helping my mentor optimize the lab's quantum circuit simulator. During the project, I took a deep dive into Monte Carlo algoriths, and became proficient in Python programming. The results from this project will soon be published in an academic journal.<br/><br/>You can read more about this project on my <a href='about.html'>about page</a>.");
             });
 
             $("#gamecube").click(function() {
-                $("#infobox-copy").html("You clicked on my GameCube!<br/><br/>The GameCube that I received on Christmas 2004 was my first foray into video games. I instantly fell in love with its cartoony 3D worlds and have since poured many hours into classics such as MVP Baseball 2005 and Need for Speed: Most Wanted.<br/><br/>My GameCube was the centerpiece of the Super Smash Bros. Melee league I hosted in summer 2016. This activity led me to develop a PHP and SQL based <a href='/smash/' target='_blank'>website</a> to make player statistics public!");
+                $("#infobox-copy").html("You clicked on my GameCube!<br/><br/>My first foray into video gaming was the GameCube I received on Christmas 2004. I instantly fell in love with its cartoony 3-D worlds. Since then I've poured many happy hours into GameCube classics such as MVP Baseball 2005 and Need for Speed: Most Wanted.<br/><br/>That original GameCube was the centerpiece of the Super Smash Bros. Melee league I hosted in summer 2016. To support the league and make player statistics available to participants, I developed a PHP- and SQL-based website which you can read about <a href='smash.html' target='_blank'>here</a>.");
             });
 
             $("#computer").click(function() {
-                $("#infobox-copy").html("You clicked on my computer!<br/><br/>At home I run a <a href='http://pcpartpicker.com/list/vQGJkT' target='_blank'>desktop</a> that I built myself. At school, I have a Lenovo Thinkpad 13. Both run Windows, but I also have experience with Linux from working at the Brown Lab!");
+                $("#infobox-copy").html("You clicked on my computer!<br/><br/>At home I run a <a href='http://pcpartpicker.com/list/vQGJkT' target='_blank'>desktop</a> that I built myself. At school, I have a Lenovo Thinkpad 13. Both run Windows, but I also have experience with Linux from working at the Brown Lab.<br/><br/>I use my computers to program fun things, research subjects I'm interested in, and play games.");
             });
 
             $("#keyboard").click(function() {
-                $("#infobox-copy").html("Hear that?? It's my mechanical keyboard!<br/><br/>I became interested in keyboards when I was thinking about how to improve my typing. What I found was a wild keyboard world with many types of switches, caps, etc.<br/><br/>I currently have five keyboards including three that I refurbished and one that I built! These days I mostly use my <a href='https://upload.wikimedia.org/wikipedia/commons/5/57/ModelM.jpg' target='_blank'>IBM Model M</a>.");
+                $("#infobox-copy").html("Hear that?? It's my mechanical keyboard!<br/><br/>I became interested in keyboards when I was thinking about how to improve my typing. What I found was a wild keyboard world with many types of switches, caps, etc.<br/><br/>As a result, I became a passionate mechanical keyboard expert. Today, I have five keyboards, including three vintage keyboards and one that I designed and built. It's hard to say which one I like most, but these days I usually use my <a href='https://upload.wikimedia.org/wikipedia/commons/5/57/ModelM.jpg' target='_blank'>IBM Model M</a>.");
             });
 
             $("#alonzo-map").click(function() {
-                $("#infobox-copy").html("Hello! I'm Alonzo Hernandez and this is my room of curiosities!<br/><br/>Click on objects outlined in red to learn more about who I am and the things I love.");
+                $("#infobox-copy").html("Hello, I'm Alonzo Hernandez and this room is filled with the things that make me who I am.<br/><br/>Click on each red-outlined object to learn more!<br/><br/>After you've checked each item, you can learn more <a href='about.html'>about me</a> and my <a href='projects.html'>projects</a>.");
             });
 
             $("#baseball").click(function() {
-                $("#infobox-copy").html("You clicked on my baseball stuff!<br/><br/>Before high school, I played travel baseball. <a href='http://www.gwinnettbaseball.com/showimage.asp?img=/photos/2011_ggbl_champs2.jpg' target='_blank'>Here's</a> my team after we won the county championship in 2011! (I'm the kid in the upper-left)<br/><br/>Besides playing, I also coached during high school and collected cards. Baseball statistics were the subject of my first data-obsession.<br/><br/>Go Braves!");
+                $("#infobox-copy").html("You clicked on my baseball stuff!<br/><br/>Before high school, I played travel baseball. <a href='http://www.gwinnettbaseball.com/showimage.asp?img=/photos/2011_ggbl_champs2.jpg' target='_blank'>Here's my team after we won the county championship in 2011!</a> (I'm the kid in the upper-left)<br/><br/>In addition to playing, I also coached PeeWee teams during high school. It was a change of perspective to be on the other side of the fence. My love of baseball also led me to collect baseball cards. Through hours of studying these cards, baseball statistics became the subject of my first data obsession.<br/><br/>Go Braves!");
             });
 
             $("#books").click(function() {
-                $("#infobox-copy").html("Ahhh, my school books!<br/><br/>I went to high school at the <a href='http://gsmst.org/' target='_blank'>Gwinnett School of Mathematics, Science, and Technology</a>, where I got to take high level technical courses that prepared me well for college. Now I attend Georgia Tech as a computer science major!<br/><br/>Go Jackets!");
+                $("#infobox-copy").html("Ahhh, my school books!<br/><br/>I was lucky to be selected to attend the <a href='http://gsmst.org/' target='_blank'>Gwinnett School of Mathematics, Science, and Technology</a> for my four years at high school. There, I was able to complete high level computer science and math courses, in addition to studying four years of Chinese. All of this prepared me well for college. Now I attend Georgia Tech as a computer science major. I intend to learn everything I can about software development, while enjoying all of the opportunities afforded by attending such a great school.<br/><br/>Go Jackets!");
             });
 
             $("#synthesizer").click(function() {
-                $("#infobox-copy").html("That's my synthesizer!<br/><br/>In addition to listening to music, I love to make it. One of my on-going projects is learning how to play piano. Although my skills don't match the power of my <a href='https://youtu.be/XyjZCTysVQQ'>Korg DW8000</a>, its interesting sounds keep me practicing.");
+                $("#infobox-copy").html("That's my synthesizer!<br/><br/>Music is a super-important part of my life. In addition to being a serious listener and collector, I also love to make music.<br/><br/>Learning to play piano is one of my ongoing projects. Although my skills don't match the power of my <a href='https://youtu.be/XyjZCTysVQQ' target='_blank'>Korg DW8000</a>, its interesting sounds keep me practicing. One item on my lifetime to-do list is to build my own synthesizer from scratch.");
             });
         </script>
     </body>

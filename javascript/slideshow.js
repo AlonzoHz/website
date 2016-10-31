@@ -1,21 +1,25 @@
 var slide = 0;
 var slides = document.getElementsByClassName("slide");
 $(slides[slide]).show();
-console.log(slides.length);
+interval = setInterval(changeSlide, 5000, 1);
 
 $("#arrow-right").click(function() {
-    $(slides[slide]).fadeOut(100);
-    slide += 1;
-    if(slide == slides.length) {slide = 0}
-    $(slides[slide]).fadeIn(100);
+    changeSlide(1);
 });
 
 $("#arrow-left").click(function() {
-    $(slides[slide]).fadeOut(100);
-    slide -= 1;
-    if(slide < 0) {slide = slides.length - 1}
-    $(slides[slide]).fadeIn(100);
+    changeSlide(-1);
 });
+
+function changeSlide(amount) {
+    $(slides[slide]).fadeOut(100);
+    slide += amount;
+    if(slide < 0) {slide = slides.length - 1}
+    if(slide == slides.length) {slide = 0}
+    $(slides[slide]).fadeIn(100);
+    clearInterval(interval);
+    interval = setInterval(changeSlide, 5000, 1);
+}
 
 $(slides[slide]).click(function() {
     $("#enlarged-image").fadeIn(100);

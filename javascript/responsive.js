@@ -16,6 +16,7 @@ function resize() {
             $("#picture").css("width", "100%");
             $("#aboutme").css("margin-left", "0px");
             //Contact resizing
+            $("#picture").insertAfter("#aboutme");
             //Projects resizing
             $(".project-column").css("width", "95%");
             //Resume resizing
@@ -32,6 +33,7 @@ function resize() {
         $("#picture").css("width", "45%");
         $("#aboutme").css("margin-left", "50%");
         //Contact resizing
+        $("#aboutme").insertAfter("#picture");
         //Projects resizing
         $(".project-column").css("width", "45%");
         //Resume resizing
